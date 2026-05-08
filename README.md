@@ -3,8 +3,8 @@
 ## Integrantes da Equipe
 - Amanda Alves
 - Anna Ellyca
-- Maxsuel Bruno
 - Pedro Neto
+- Maxsuel Bruno
 
 ## Descrição do Problema
 Muitas pessoas enfretam dificuldades para organizar suas refeições no dia a dia, seja por falta de tempo, conhecimento nutricional ou planejamento. Isso leva grande parte da sociedade a escolhas alimentares pouco saudável, disperdício de alimentos e gastos desnecessários.
