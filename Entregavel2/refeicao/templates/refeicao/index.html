@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriXa - Início</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="usuario">
+            <img src="{% static 'img/logo.png' %}" alt="Logo NutriXa" class="logo-pequena">
+
+            <div>
+                <h1>Olá, Max!</h1>
+                <p>Quarta-feira, 24 de junho</p>
+            </div>
+        </div>
+
+        <div class="perfil">
+            👤
+        </div>
+    </header>
+
+    <main>
+
+        <section class="resumo">
+            <h2>Resumo do dia</h2>
+
+            <div class="meta">
+                <h3>1.250 / 2.000 kcal</h3>
+                <p>750 kcal restantes</p>
+            </div>
+
+            <div class="nutrientes">
+                <div>
+                    <strong>Proteínas</strong>
+                    <p>75g / 120g</p>
+                </div>
+
+                <div>
+                    <strong>Carboidratos</strong>
+                    <p>140g / 250g</p>
+                </div>
+
+                <div>
+                    <strong>Gorduras</strong>
+                    <p>35g / 60g</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="refeicoes">
+            <div class="titulo-refeicoes">
+                <h2>Refeições do dia</h2>
+                <button>Ver todas</button>
+            </div>
+
+            <div class="card-refeicao">
+                <h3>Café da Manhã</h3>
+                <p>08:00</p>
+                <p>Pão integral com ovo mexido e café sem açúcar</p>
+
+                <button>Detalhes</button>
+            </div>
+
+            <div class="card-refeicao">
+                <h3>Almoço</h3>
+                <p>12:30</p>
+                <p>Arroz integral, feijão, frango grelhado e salada verde</p>
+
+                <button>Detalhes</button>
+            </div>
+
+            <div class="card-refeicao">
+                <h3>Lanche</h3>
+                <p>16:00</p>
+                <p>Iogurte natural com granola e banana</p>
+
+                <button>Detalhes</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="menu">
+        <a href="#">🏠<br>Início</a>
+        <a href="#">📅<br>Semana</a>
+        <a href="#">🛒<br>Compras</a>
+        <a href="#">👤<br>Perfil</a>
+    </footer>
+
+</body>
+</html>
