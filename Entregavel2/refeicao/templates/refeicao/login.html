@@ -1,22 +1,40 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - NutriXa</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
-    <h1>Login</h1>
 
-    <form>
+    <div class="logo-area">
+        <div class="logo-circle">🍃</div>
+        <div class="logo-title">NUTRIXA</div>
+        <div class="logo-subtitle">Planejador de Refeições</div>
+    </div>
+
+    <h2 class="title">Login</h2>
+
+    <div class="form-group">
         <label>Email</label>
-        <input type="email">
+        <input type="email" placeholder="seuemail@exemplo.com">
+    </div>
 
+    <div class="form-group">
         <label>Senha</label>
-        <input type="password">
+        <input type="password" placeholder="******">
+    </div>
 
-        <button type="submit">Entrar</button>
-    </form>
+    <button class="btn-primary">Entrar</button>
 
-    <a href="/cadastro/">Criar conta</a>
+    <a href="#" class="link-text">Criar conta</a>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
 </body>
 </html>

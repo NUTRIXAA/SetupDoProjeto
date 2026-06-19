@@ -1,0 +1,369 @@
+:root {
+    --primary-green: #1E6F34;
+    --light-green: #A3C9A8;
+    --pastel-green: #BCD4C4;
+    --dark-green: #124520;
+    --bg-light: #F7F9F7;
+    --white: #FFFFFF;
+    --gray-text: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.screen-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Componentes Comuns */
+
+.logo-area {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--primary-green);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-green);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo-title {
+    color: var(--dark-green);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.logo-subtitle {
+    font-size: 10px;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    color: var(--dark-green);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Formulários */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 11px;
+    color: var(--primary-green);
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 16px;
+}
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.link-text {
+    color: var(--primary-green);
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* Topo */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    font-size: 24px;
+    color: var(--dark-green);
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.top-bar h3 {
+    color: var(--dark-green);
+}
+
+/* Cards */
+
+.green-card {
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Tela Inicial */
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.circle-progress {
+    width: 65px;
+    height: 65px;
+    border: 6px solid rgba(255,255,255,.2);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.macros-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255,255,255,.3);
+    padding-top: 10px;
+}
+
+.meal-item {
+    background: white;
+    border-left: 5px solid var(--primary-green);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-info h4 {
+    color: var(--dark-green);
+}
+
+.meal-info p {
+    color: var(--gray-text);
+    font-size: 12px;
+}
+
+.btn-details {
+    background: var(--light-green);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Planejamento */
+
+.weekly-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.weekly-table th {
+    background: var(--light-green);
+    padding: 10px;
+    text-align: left;
+}
+
+.weekly-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Detalhes */
+
+.nutri-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients-list {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.ingredient-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Perfil */
+
+.profile-option {
+    background: white;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Compras */
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--gray-text);
+}
+
+/* Perfil */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    color: var(--primary-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-info h3 {
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.profile-summary {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.profile-summary h3 {
+    margin-bottom: 5px;
+}
+
+.profile-summary div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Compras */
+
+.shopping-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-total h2 {
+    margin: 5px 0;
+}
+
+.shopping-list {
+    margin-top: 15px;
+}
+
+.shopping-item {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-item span {
+    color: var(--gray-text);
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-green);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.nav-item:hover {
+    opacity: 0.8;
+}
+
+.weekly-table {
+    width: 100%;
+    font-size: 14px;
+}

@@ -1,22 +1,37 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Detalhes da Refeição</title>
+    ...
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Detalhes da Refeição</h1>
+    
+    <div class="top-bar">
+        <button class="back-btn">←</button>
+        <h3>Detalhes da Refeição</h3>
+    </div>
 
-    <h2>Arroz, feijão e frango</h2>
+    <div class="green-card">
+        <h3>Arroz, Feijão e Frango</h3>
+    </div>
 
-    <p>520 kcal</p>
+    <div class="ingredients-list">
+   
+        <div class="ingredient-row">
+            <span>Arroz</span>
+            <span>150g</span>
+        </div>
+    
+        <div class="ingredient-row">
+            <span>Feijão</span>
+            <span>100g</span>
+        </div>
 
-    <h3>Ingredientes</h3>
+    </div>
 
-    <ul>
-        <li>Arroz</li>
-        <li>Feijão</li>
-        <li>Frango</li>
-    </ul>
+    <script src="{% static 'js/script.js' %}"></script>
+    
 </body>
 </html>
